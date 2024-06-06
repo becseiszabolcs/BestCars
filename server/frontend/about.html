@@ -5,6 +5,17 @@
     Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
 
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var home = document.getElementById('home');
+        var about = document.getElementById('about');
+        var contact = document.getElementById('contact');
+
+        home.classList.remove('selected');
+        about.classList.add('selected');
+        contact.classList.remove('selected');
+    });
+</script>
 {% endblock %}
 
 

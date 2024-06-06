@@ -1,15 +1,15 @@
-{% extends "index.html" %} {% block title %} Home Page {% endblock %}
+{% extends "index.html" %} {% block title %} Contact Page {% endblock %}
 {% block content %} 
-<p>this is the home page</p> 
+<p>this is the Contact page</p> 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         var home = document.getElementById('home');
         var about = document.getElementById('about');
         var contact = document.getElementById('contact');
 
-        home.classList.add('selected');
+        home.classList.remove('selected');
         about.classList.remove('selected');
-        contact.classList.remove('selected');
+        contact.classList.add('selected');
 
     });
 </script>
