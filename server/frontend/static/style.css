@@ -2,16 +2,19 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
 }
+
 header{
     align-items: center;
     display: flex;
-    background-color: rgb(0, 139, 139);
+    background-color: rgba(0, 123, 180, 1);
     padding: 10px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     height: 80px;
+    margin-bottom: 45px;
 }
 header nav{
     margin-left: 30px;
@@ -30,7 +33,6 @@ header nav a{
     color: rgba(255, 255, 255, 0.685);
     margin: 5px;
     
-
 }
 header nav .selected{
     color: whitesmoke;
@@ -41,3 +43,100 @@ header nav a:hover{
     margin: 5px;
 
 }
+#container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+#container.about{
+    background-image: url('http://localhost:8000/static/image/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#page.about{
+    display: flex;
+    justify-content: center;
+
+}
+#about-header{
+
+    padding: 20px;
+    min-width: 824px;
+    max-width: 1024px;
+    
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(15px);
+    width: 75%;
+
+
+}
+#about-header .header-h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0;
+
+}
+#about-header .header-p{
+    font-size: 25px;
+    margin: 25px 0;
+}
+.tag-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tag{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.703);
+    margin: 0 10px;
+    height: 400px;
+    width:230px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+    
+
+}
+.tag h1{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.tag h2{
+    font-size: 20px;
+    text-align: left;
+    width: 200px;
+}
+.tag p{
+    font-size: 15px;
+}
+.tag .img{
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.tag .img img{
+    width: 100%;
+}
+
+

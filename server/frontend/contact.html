@@ -1,12 +1,32 @@
-{% extends "index.html" %} {% block title %} Contact Page {% endblock %}
+{% extends "index.html" %} {% block title %} Contact - Dealerships {% endblock %}
 {% block content %} 
-<p>this is the Contact page</p> 
+<div>
+    <div class="cont-header">
+        <img src="" alt="">
+    </div>
+    <div class="info">
+        <img src="" alt="">
+        <ul>
+            <h1></h1>
+            <li></li>
+            <h1></h1>
+            <li></li>
+            <h1></h1>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+
+
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
+        //var page = document.getElementsById('page');
         var home = document.getElementById('home');
         var about = document.getElementById('about');
         var contact = document.getElementById('contact');
 
+        //page.classList.remove('about');
         home.classList.remove('selected');
         about.classList.remove('selected');
         contact.classList.add('selected');

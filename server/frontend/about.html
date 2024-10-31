@@ -1,19 +1,59 @@
-{% extends "index.html" %} {% block title %} About Us Page {% endblock %}
+{% extends "index.html" %} {% block title %} About Us - Dealerships {% endblock %}
 {% block content %} 
-<div name="about-header">
-    <h1>About Us</h1>
-    Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
+<div id="about-header">
+    <h1 calss="header-h1">About Us</h1>
+    <p class="header-p">Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.</p>
+    <div class="tag-list">
+        <div class="tag">
+            <div class="img"><img src="http://localhost:8000/static/image/1.jpg" alt="" ></div>
+            <h1>Hello</h1>
+            <h2>About me</h2>
+            <p>
+                Dolor irure culpa enim velit mollit qui qui culpa culpa exercitation dolore. 
+            </p>
+
+        </div>
+        <div class="tag">
+            <div class="img"><img src="http://localhost:8000/static/image/2.jpg" alt="" ></div>
+            <h1>Darkness</h1>
+            <h2>About me</h2>
+            <p>
+                Dolor irure culpa enim velit mollit qui qui culpa culpa exercitation dolore. 
+            </p>
+
+
+        </div>
+        <div class="tag">
+            <div class="img"><img src="http://localhost:8000/static/image/3.jpg" alt="" ></div>
+            <h1>My old friend</h1>
+            <h2>About me</h2>
+            <p>
+                Dolor irure culpa enim velit mollit qui qui culpa culpa exercitation dolore. 
+            </p>
+
+        </div>
+    </div>
+
 
 </div>
+
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-        var home = document.getElementById('home');
+
+        var cont = document.getElementById('container');
+        var header = document.getElementById('first-header');
+        var page = document.getElementById('page');
         var about = document.getElementById('about');
+        var home = document.getElementById('home');
         var contact = document.getElementById('contact');
 
-        home.classList.remove('selected');
+        header.style.backgroundColor = "rgba(0, 123, 180, 0.789)";
         about.classList.add('selected');
+        cont.classList.add('about');
+        page.classList.add('about');
+        home.classList.remove('selected');
         contact.classList.remove('selected');
+
     });
 </script>
 {% endblock %}
